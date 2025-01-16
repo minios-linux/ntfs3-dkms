@@ -1,10 +1,10 @@
 This package was debianized by Easynet Consulting SRL <devel@easynet.dev>  on  Sat, 24 Feb 2024 23:20:20 +0200
 
-Upstream Author(s): 
+Upstream Author(s):
 	EasyNet Consulting SRL, http://www.easynet.dev
 
 Downloaded from:
-	https://github.com/EasyNetDev/ntfs3-dkms/archive/refs/heads/main.zip
+	https://github.com/minios-linux/ntfs3-dkms/archive/refs/heads/main.zip
 
 Copyright:
 	Copyright (C) 2022 EasyNet Consulting SRL, Romania

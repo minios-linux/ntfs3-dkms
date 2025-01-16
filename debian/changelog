@@ -1,3 +1,10 @@
+ntfs3-dkms (1.0.12~mos+1) unstable; urgency=medium
+
+  * Add Linux Kernel 6.1 NTFS3 driver.
+  * Suppressed the update-initramfs error when installing and uninstalling the package, since update-initramfs is not used in MiniOS.
+
+ -- crims0n <crims0n@minios.dev>  Thu, 16 Jan 2025 18:46:26 +0300
+
 ntfs3-dkms (1.0.12) unstable; urgency=medium
 
   * Add Linux Kernel 6.13 NTFS3 driver.

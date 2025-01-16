@@ -18,7 +18,7 @@ case "$1" in
 	/usr/lib/dkms/common.postinst $PACKAGE_NAME $CVERSION /usr/share/$PACKAGE_NAME $ARCH $2
 
 	# Update initramfs
-	update-initramfs -u
+	update-initramfs -u 2>/dev/null || true
 	;;
 esac
 

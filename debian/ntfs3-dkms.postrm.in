@@ -10,7 +10,7 @@ set -e
 case "$1" in
 	remove|purge)
 		# Update initramfs
-		update-initramfs -u
+		update-initramfs -u 2>/dev/null || true
 		;;
 esac
 
