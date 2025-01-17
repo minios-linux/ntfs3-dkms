@@ -4,8 +4,23 @@
 
 PWD	?= $(shell pwd)
 
-$(info Makefile: Include Config.mk)
-include $(PWD)/Config.mk
+#$(info Makefile: Include Config.mk)
+#include $(PWD)/Config.mk
+
+### Config.mk ###
+export DRIVER_NAME := ntfs3
+export DRIVER_SRC_PATH :=
+export DRIVER_KPATH := fs
+
+# Define SYMBOLS / MACROS for which modules to build
+MODULE_CONFIG := CONFIG_NTFS3_FS=m \
+		CONFIG_NTFS3_64BIT_CLUSTER=y \
+		CONFIG_NTFS3_LZX_XPRESS=y \
+		CONFIG_NTFS3_FS_POSIX_ACL=y \
+		CONFIG_NTFS_FS=y \
+
+MODULES_INSTALL := ntfs3.ko
+###
 
 # Autodetection if we have a driver for the specific MAJOR.MINOR version of kernel
 export KVER_MAJ_MIN := $(shell echo ${KERNELRELEASE} | sed "s/\([0-9]\+\.[0-9]\+\)\..*/\1/g")
